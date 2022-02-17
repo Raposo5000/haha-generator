@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        width: 350px;
+        background-color: rgb(31, 31, 31);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      #risada-gerada {
+        width: 300px;
+        height: 150px;
+        border: solid 1px white;
+        word-break: break-all;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="popup.js"></script>
+    <p>
+      <span>tamanho da risada: </span><br />
+      <select id="tamanho-risada">
+        <option value="Pequena">Pequena</option>
+        <option value="Média">Média</option>
+        <option value="Grande">Grande</option>
+        <option value="Capotou o Celtinha">Capotou o Celtinha</option>
+      </select>
+    </p>
+
+    <p>
+      <span>tipo da risada:</span><br />
+      <select id="tipo-risada">
+        <option value="kkk">kkk</option>
+        <option value="kkkjjj">kkkjjj</option>
+        <option value="ashua">ashua</option>
+        <option value="hueBR">hueBR</option>
+        <option value="rs">rsrs</option>
+        <option value="haha">haha</option>
+      </select>
+    </p>
+    <p>
+      <input type="button" value="GERAR" onclick="gerar()"/>
+    </p>
+    <div id="risada-gerada"></div>
+
+  </body>
+</html>
