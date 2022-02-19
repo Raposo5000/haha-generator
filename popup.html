@@ -9,22 +9,22 @@
     <style>
       body {
         width: 350px;
-        background-color: rgb(31, 31, 31);
-        color: white;
+        background-color: rgb(255, 255, 255);
+        color: rgb(29, 29, 29);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
       }
       #risada-gerada {
         width: 300px;
         height: 150px;
-        border: solid 1px white;
+        border: solid 1px rgb(63, 63, 63);
         word-break: break-all;
         overflow-y: scroll;
       }
     </style>
   </head>
   <body>
-    <script src="popup.js"></script>
+    
     <p>
       <span>tamanho da risada: </span><br />
       <select id="tamanho-risada">
@@ -47,9 +47,9 @@
       </select>
     </p>
     <p>
-      <input type="button" value="GERAR" onclick="gerar()"/>
+      <input type="button" value="GERAR E COPIAR" id="btn-gerar"/>
     </p>
     <div id="risada-gerada"></div>
-
   </body>
+  <script src="popup.js"></script>
 </html>

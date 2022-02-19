@@ -33,5 +33,12 @@ const gerar = function () {
   let risada_gerada = document.getElementById("risada-gerada");
 
   const risada = gerarRisada(tipo_risada.value, tamanho_risada.value);
+
+  navigator.clipboard.writeText(risada);
+
   risada_gerada.innerHTML = risada;
 };
+
+const btn_gerar = document.getElementById("btn-gerar")
+
+btn_gerar.addEventListener("click", () => gerar())
